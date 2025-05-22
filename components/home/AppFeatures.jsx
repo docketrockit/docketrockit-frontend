@@ -155,7 +155,7 @@ const AppFeatures = () => {
                             How It Works
                         </h2>
                         <h3 className="!text-[calc(1.325rem_+_0.9vw)] font-bold !leading-[1.2] xl:!text-[2rem] !mb-8 xl:!px-6">
-                            Download the app, create your profile and
+                            Download the app and{' '}
                             <span className="text-gradient gradient-7">
                                 voilà
                             </span>
@@ -165,7 +165,7 @@ const AppFeatures = () => {
                     {/* /column */}
                 </div>
                 {/* /.row */}
-                <div className="flex flex-wrap mx-[-15px] lg:!mb-40 xl:!mb-[17.5rem]">
+                <div className="flex flex-wrap mx-[-15px] lg:!mb-40 xl:!mb-[10.5rem]">
                     <div className="xxl:w-11/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mx-auto">
                         <div className="flex flex-wrap mx-[-15px] !mt-[-50px] xl:!mt-0 lg:!mt-0 !text-center items-center">
                             <div className="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mx-auto !mb-[-2.5rem] lg:!mb-0 xl:!mb-0 !mt-[50px] xl:!mt-0 lg:!mt-0">
@@ -186,12 +186,11 @@ const AppFeatures = () => {
                                         01
                                     </span>
                                     <h4 className="!text-[1rem]">
-                                        Download Application
+                                        Download the Application
                                     </h4>
                                     <p className="!mb-0 xl:!px-7">
-                                        Nulla vitae elit libero, a pharetra
-                                        augue. Donec id elit non mi porta
-                                        gravida at eget metus.
+                                        Setup your profile, add to your virtual
+                                        wallet and go shopping
                                     </p>
                                 </div>
                                 {/* /div */}
@@ -200,12 +199,12 @@ const AppFeatures = () => {
                                         02
                                     </span>
                                     <h4 className="!text-[1rem]">
-                                        Quick Registration
+                                        Tap or scan in store
                                     </h4>
                                     <p className="!mb-0 xl:!px-7">
-                                        Nulla vitae elit libero, a pharetra
-                                        augue. Donec id elit non mi porta
-                                        gravida at eget metus.
+                                        Before you pay, tap your phone or scan
+                                        your barcode and send your receipt
+                                        direct to your phone
                                     </p>
                                 </div>
                                 {/* /div */}
@@ -217,12 +216,11 @@ const AppFeatures = () => {
                                         03
                                     </span>
                                     <h4 className="!text-[1rem]">
-                                        Track Your Spending
+                                        Track your receipts
                                     </h4>
                                     <p className="!mb-0 xl:!px-7">
-                                        Nulla vitae elit libero, a pharetra
-                                        augue. Donec id elit non mi porta
-                                        gravida at eget metus.
+                                        Receive your receipts almost instantly
+                                        and keep track of your purchases
                                     </p>
                                 </div>
                                 {/* /div */}
@@ -231,12 +229,11 @@ const AppFeatures = () => {
                                         04
                                     </span>
                                     <h4 className="!text-[1rem]">
-                                        Have Total Control
+                                        No more wasted paper
                                     </h4>
                                     <p className="!mb-0 xl:!px-7">
-                                        Nulla vitae elit libero, a pharetra
-                                        augue. Donec id elit non mi porta
-                                        gravida at eget metus.
+                                        Help the environment, save paper, and
+                                        don't lose anything
                                     </p>
                                 </div>
                                 {/* /div */}
