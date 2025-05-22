@@ -37,7 +37,7 @@ const Hero = () => {
                         <h1 className="xl:!text-[2.5rem] !text-[calc(1.375rem_+_1.5vw)] font-semibold !leading-[1.15] !mb-4">
                             Manage all your receipts no matter where you shop,{' '}
                             <span className="text-gradient gradient-7">
-                                one place.
+                                all in one place.
                             </span>
                         </h1>
                         <p className="lead !text-[1.2rem] !leading-[1.5] !font-normal !mb-7">
