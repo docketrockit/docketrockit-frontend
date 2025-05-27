@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import VimeoPlayer from '@/lib/vimeo-player';
+
 export default function Faqs() {
     return (
         <section
@@ -13,10 +15,15 @@ export default function Faqs() {
                 <div className="flex flex-wrap mx-[-15px]">
                     <div className="xl:w-11/12 xxl:w-10/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mx-auto">
                         <div className="lg:!mt-[-10rem] xl:!mt-[-15rem] !mb-[4.5rem] xl:!mb-[6rem] lg:!mb-[6rem] md:!mb-[6rem] !rounded-[0.8rem]">
-                            <div
+                            {/* <div
                                 className="player relative z-[2] rounded-[0.4rem]"
                                 data-plyr-provider="vimeo"
-                                data-plyr-embed-id={165101721}
+                                data-plyr-embed-id={165101721 347119375}
+                            /> */}
+                            <VimeoPlayer
+                                videoId="1088005901"
+                                title="DocketRockit Explainer"
+                                className="mb-8"
                             />
                         </div>
                         <div className="!relative">
@@ -68,7 +75,8 @@ export default function Faqs() {
                                                 aria-expanded="false"
                                                 aria-controls="accordion-collapse-1-1"
                                             >
-                                                Can I cancel my subscription?
+                                                Can I use DocketRockit in store
+                                                and online?
                                             </button>
                                         </div>
                                         {/* /.card-header */}
@@ -80,21 +88,14 @@ export default function Faqs() {
                                         >
                                             <div className="card-body flex-[1_1_auto] p-[0_1.25rem_.25rem_2.35rem]">
                                                 <p>
-                                                    Fusce dapibus, tellus ac
-                                                    cursus commodo, tortor
-                                                    mauris condimentum nibh, ut
-                                                    fermentum massa justo sit
-                                                    amet risus. Cras mattis
-                                                    consectetur purus sit amet
-                                                    fermentum. Praesent commodo
-                                                    cursus magna, vel
-                                                    scelerisque nisl consectetur
-                                                    et. Cum sociis natoque
-                                                    penatibus et magnis dis
-                                                    parturient montes, nascetur
-                                                    ridiculus mus. Donec sed
-                                                    odio dui. Cras justo odio,
-                                                    dapibus ac facilisis.
+                                                    Yes, DocketRockit is made to
+                                                    capture all your receipts,
+                                                    no matter where you buy
+                                                    from. Use your barcode or
+                                                    virutal wallet instore, and
+                                                    your member details online,
+                                                    and get all your receipts in
+                                                    one place.
                                                 </p>
                                             </div>
                                             {/* /.card-body */}
