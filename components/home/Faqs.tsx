@@ -115,8 +115,8 @@ export default function Faqs() {
                                                 aria-expanded="false"
                                                 aria-controls="accordion-collapse-1-2"
                                             >
-                                                Which payment methods do you
-                                                accept?
+                                                How do I scan my account in
+                                                store?
                                             </button>
                                         </div>
                                         {/* /.card-header */}
@@ -128,21 +128,14 @@ export default function Faqs() {
                                         >
                                             <div className="card-body flex-[1_1_auto] p-[0_1.25rem_.25rem_2.35rem]">
                                                 <p>
-                                                    Fusce dapibus, tellus ac
-                                                    cursus commodo, tortor
-                                                    mauris condimentum nibh, ut
-                                                    fermentum massa justo sit
-                                                    amet risus. Cras mattis
-                                                    consectetur purus sit amet
-                                                    fermentum. Praesent commodo
-                                                    cursus magna, vel
-                                                    scelerisque nisl consectetur
-                                                    et. Cum sociis natoque
-                                                    penatibus et magnis dis
-                                                    parturient montes, nascetur
-                                                    ridiculus mus. Donec sed
-                                                    odio dui. Cras justo odio,
-                                                    dapibus ac facilisis.
+                                                    Depending on how the store
+                                                    has set up their
+                                                    DocketRockit at checkout,
+                                                    you can either tap or scan
+                                                    your barcode. Both of these
+                                                    can be connected to your
+                                                    phone&apos;s virtual wallet
+                                                    for easy use.
                                                 </p>
                                             </div>
                                             {/* /.card-body */}
@@ -217,8 +210,7 @@ export default function Faqs() {
                                                 aria-expanded="false"
                                                 aria-controls="accordion-collapse-2-1"
                                             >
-                                                How do I get my subscription
-                                                receipt?
+                                                Is my data safe?
                                             </button>
                                         </div>
                                         {/* /.card-header */}
@@ -230,21 +222,15 @@ export default function Faqs() {
                                         >
                                             <div className="card-body flex-[1_1_auto] p-[0_1.25rem_.25rem_2.35rem]">
                                                 <p>
-                                                    Fusce dapibus, tellus ac
-                                                    cursus commodo, tortor
-                                                    mauris condimentum nibh, ut
-                                                    fermentum massa justo sit
-                                                    amet risus. Cras mattis
-                                                    consectetur purus sit amet
-                                                    fermentum. Praesent commodo
-                                                    cursus magna, vel
-                                                    scelerisque nisl consectetur
-                                                    et. Cum sociis natoque
-                                                    penatibus et magnis dis
-                                                    parturient montes, nascetur
-                                                    ridiculus mus. Donec sed
-                                                    odio dui. Cras justo odio,
-                                                    dapibus ac facilisis.
+                                                    We use the highest security
+                                                    when it comes to your data.
+                                                    We are just as passionate
+                                                    about security as we are in
+                                                    saving the environment and
+                                                    using digital receipts. We
+                                                    make sure that your personal
+                                                    identifiable data is never
+                                                    sold.
                                                 </p>
                                             </div>
                                             {/* /.card-body */}
@@ -264,8 +250,7 @@ export default function Faqs() {
                                                 aria-expanded="false"
                                                 aria-controls="accordion-collapse-2-2"
                                             >
-                                                Are there any discounts for
-                                                people in need?
+                                                Will any retailers contact me??
                                             </button>
                                         </div>
                                         {/* /.card-header */}
@@ -277,21 +262,15 @@ export default function Faqs() {
                                         >
                                             <div className="card-body flex-[1_1_auto] p-[0_1.25rem_.25rem_2.35rem]">
                                                 <p>
-                                                    Fusce dapibus, tellus ac
-                                                    cursus commodo, tortor
-                                                    mauris condimentum nibh, ut
-                                                    fermentum massa justo sit
-                                                    amet risus. Cras mattis
-                                                    consectetur purus sit amet
-                                                    fermentum. Praesent commodo
-                                                    cursus magna, vel
-                                                    scelerisque nisl consectetur
-                                                    et. Cum sociis natoque
-                                                    penatibus et magnis dis
-                                                    parturient montes, nascetur
-                                                    ridiculus mus. Donec sed
-                                                    odio dui. Cras justo odio,
-                                                    dapibus ac facilisis.
+                                                    No! The retailers will pass
+                                                    on your receipt based on
+                                                    your DocketRockit account
+                                                    number and that&apos;s it,
+                                                    your relationship is with
+                                                    us, and you will only ever
+                                                    be contacted by us if there
+                                                    is an issue, or for any
+                                                    sales we may be aware of.
                                                 </p>
                                             </div>
                                             {/* /.card-body */}
@@ -311,7 +290,8 @@ export default function Faqs() {
                                                 aria-expanded="false"
                                                 aria-controls="accordion-collapse-2-3"
                                             >
-                                                Do you offer a free trial edit?
+                                                What if I don&apos;t want any
+                                                offers?
                                             </button>
                                         </div>
                                         {/* /.card-header */}
@@ -323,21 +303,8 @@ export default function Faqs() {
                                         >
                                             <div className="card-body flex-[1_1_auto] p-[0_1.25rem_.25rem_2.35rem]">
                                                 <p>
-                                                    Fusce dapibus, tellus ac
-                                                    cursus commodo, tortor
-                                                    mauris condimentum nibh, ut
-                                                    fermentum massa justo sit
-                                                    amet risus. Cras mattis
-                                                    consectetur purus sit amet
-                                                    fermentum. Praesent commodo
-                                                    cursus magna, vel
-                                                    scelerisque nisl consectetur
-                                                    et. Cum sociis natoque
-                                                    penatibus et magnis dis
-                                                    parturient montes, nascetur
-                                                    ridiculus mus. Donec sed
-                                                    odio dui. Cras justo odio,
-                                                    dapibus ac facilisis.
+                                                    You are free to opt out at
+                                                    anytime for any
                                                 </p>
                                             </div>
                                             {/* /.card-body */}
