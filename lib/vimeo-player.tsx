@@ -19,7 +19,10 @@ export default function VimeoPlayer({
     title = 'Vimeo Video',
     className = ''
 }: VimeoPlayerProps) {
-    const vimeoSrc = `vimeo/${videoId}`;
+    // Handle both standard IDs and ID/hash format
+    const vimeoSrc = videoId.includes('/')
+        ? `vimeo/${videoId.split('/')[0]}?h=${videoId.split('/')[1]}`
+        : `vimeo/${videoId}`;
 
     return (
         <div className={`w-full max-w-4xl mx-auto ${className}`}>
