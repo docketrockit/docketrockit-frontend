@@ -155,7 +155,8 @@ export default function Faqs() {
                                                 aria-expanded="false"
                                                 aria-controls="accordion-collapse-1-3"
                                             >
-                                                How can I manage my Account?
+                                                Can I export data for tax
+                                                programs?
                                             </button>
                                         </div>
                                         {/* /.card-header */}
@@ -167,21 +168,11 @@ export default function Faqs() {
                                         >
                                             <div className="card-body flex-[1_1_auto] p-[0_1.25rem_.25rem_2.35rem]">
                                                 <p>
-                                                    Fusce dapibus, tellus ac
-                                                    cursus commodo, tortor
-                                                    mauris condimentum nibh, ut
-                                                    fermentum massa justo sit
-                                                    amet risus. Cras mattis
-                                                    consectetur purus sit amet
-                                                    fermentum. Praesent commodo
-                                                    cursus magna, vel
-                                                    scelerisque nisl consectetur
-                                                    et. Cum sociis natoque
-                                                    penatibus et magnis dis
-                                                    parturient montes, nascetur
-                                                    ridiculus mus. Donec sed
-                                                    odio dui. Cras justo odio,
-                                                    dapibus ac facilisis.
+                                                    Yes, one of our features is
+                                                    the ability to export
+                                                    receipts for tax purposes to
+                                                    work with the most popular
+                                                    tax software out there.
                                                 </p>
                                             </div>
                                             {/* /.card-body */}
@@ -250,7 +241,7 @@ export default function Faqs() {
                                                 aria-expanded="false"
                                                 aria-controls="accordion-collapse-2-2"
                                             >
-                                                Will any retailers contact me??
+                                                Will any retailers contact me?
                                             </button>
                                         </div>
                                         {/* /.card-header */}
@@ -304,7 +295,10 @@ export default function Faqs() {
                                             <div className="card-body flex-[1_1_auto] p-[0_1.25rem_.25rem_2.35rem]">
                                                 <p>
                                                     You are free to opt out at
-                                                    anytime for any
+                                                    anytime to not receive
+                                                    notifications of sales or
+                                                    offers, we respect your
+                                                    privacy and choices.
                                                 </p>
                                             </div>
                                             {/* /.card-body */}
