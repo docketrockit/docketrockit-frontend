@@ -7,7 +7,6 @@ import { useTransition, useState } from 'react';
 import { ReloadIcon } from '@radix-ui/react-icons';
 
 import { Form, FormControl, FormField, FormItem } from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
 
 import { Button } from '@/components/ui/button';
 import { AccountFormInput } from '@/components/form/FormInput';
@@ -47,28 +46,24 @@ const FooterSubscribe = () => {
     };
 
     return (
-        <>
+        <div className="flex flex-col">
             <Form {...form}>
                 <form
-                    className="validate dark-fields"
+                    className="flex w-full flex-col items-center space-y-4 space-x-0 px-4 md:flex-row md:space-y-0 md:space-x-4 md:px-0"
                     onSubmit={form.handleSubmit(onSubmit)}
                 >
                     <FormField
                         control={form.control}
                         name="email"
                         render={({ field }) => (
-                            <FormItem>
+                            <FormItem className={cn('w-full')}>
                                 <FormControl>
-                                    <div id="mc_embed_signup_scroll2">
-                                        <div className="!text-left input-group form-floating !relative flex flex-wrap items-stretch w-full">
-                                            <Input
-                                                {...field}
-                                                name="email"
-                                                type="text"
-                                                placeholder="Email"
-                                            />
-                                        </div>
-                                    </div>
+                                    <AccountFormInput
+                                        {...field}
+                                        name="email"
+                                        type="text"
+                                        placeholder="Email"
+                                    />
                                 </FormControl>
                             </FormItem>
                         )}
@@ -77,7 +72,9 @@ const FooterSubscribe = () => {
                         <Button
                             type="submit"
                             disabled={isPending}
-                            className={cn('h-12 rounded-xl capitalize')}
+                            className={cn(
+                                'h-12 !rounded-xl capitalize !text-white'
+                            )}
                         >
                             {isPending ? (
                                 <>
@@ -100,7 +97,7 @@ const FooterSubscribe = () => {
                     />
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

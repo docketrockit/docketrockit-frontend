@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { socialLinks } from '@/data/socials';
 import { footerLinks, footerLinks2 } from '@/data/footerLinks';
 import Link from 'next/link';
+import FooterSubscribe from './FooterSubscribe';
 export default function Footer26() {
     return (
         <footer className="!bg-[#ffffff]">
@@ -101,7 +102,8 @@ export default function Footer26() {
                             <div className="newsletter-wrapper">
                                 {/* Begin Mailchimp Signup Form */}
                                 <div id="mc_embed_signup2">
-                                    <form
+                                    <FooterSubscribe />
+                                    {/* <form
                                         onSubmit={(e) => e.preventDefault()}
                                         id="mc-embedded-subscribe-form2"
                                         name="mc-embedded-subscribe-form"
@@ -146,7 +148,7 @@ export default function Footer26() {
                                                     style={{ display: 'none' }}
                                                 />
                                             </div>
-                                            {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups*/}
+                                            {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups
                                             <div
                                                 style={{
                                                     position: 'absolute',
@@ -163,7 +165,7 @@ export default function Footer26() {
                                             </div>
                                             <div className="clear" />
                                         </div>
-                                    </form>
+                                    </form> */}
                                 </div>
                                 {/*End mc_embed_signup*/}
                             </div>
