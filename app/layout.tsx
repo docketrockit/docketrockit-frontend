@@ -9,6 +9,7 @@ import ClientInitialisers from '@/components/client/ClientInitialisers';
 import { ibmPlexSerif, manrope } from './fonts';
 import Header from '@/components/header/Header';
 import siteMetadata from '@/utils/siteMetaData';
+import Footer from '@/components/footer/Footer';
 
 export const metadata: Metadata = {
     metadataBase: new URL(siteMetadata.siteUrl),
@@ -71,7 +72,7 @@ export default function RootLayout({
                             <Header />
                             {children}
                         </div>
-                        {/* <Footer26 /> */}
+                        <Footer />
                     </div>
                     <ProgressWrap />
                 </Suspense>

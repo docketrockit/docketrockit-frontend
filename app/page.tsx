@@ -4,12 +4,11 @@ import siteMetadata from '@/utils/siteMetaData';
 import Hero from '@/components/home/Hero';
 import AppFeatures from '@/components/home/AppFeatures';
 import Faqs from '@/components/home/Faqs';
+import Features from '@/components/home/Features';
+import Cta from '@/components/home/Cta';
 
 // import Footer26 from '@/components/footers/Footer26';
 // import Header27 from '@/components/headers/Header27';
-// import Cta from '@/components/homes/home-29/Cta';
-// import Features from '@/components/homes/home-29/Features';
-// import Testimonials from '@/components/homes/home-29/Testimonials';
 
 export function generateMetadata(): Metadata {
     return {
@@ -40,13 +39,12 @@ const HomePage = () => {
             <Hero />
             <AppFeatures />
             <Faqs />
-            {/*            <section className="wrapper !bg-[#ffffff]">
-                            <div className="container py-24 xl:!py-[8rem] lg:!py-[8rem] md:!py-[8rem]">
-                                <Features />
-                                <Testimonials />
-                            </div>
-                        </section>
-                        <Cta /> */}
+            <section className="wrapper !bg-[#ffffff]">
+                <div className="container py-24 xl:!py-[8rem] lg:!py-[8rem] md:!py-[8rem]">
+                    <Features />
+                </div>
+            </section>
+            <Cta />
         </>
     );
 };

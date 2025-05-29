@@ -159,7 +159,7 @@ const AppFeatures = () => {
                             <span className="text-gradient gradient-7">
                                 voilà
                             </span>
-                            , you're all set!
+                            {`, you're all set!`}
                         </h3>
                     </div>
                     {/* /column */}
@@ -232,8 +232,8 @@ const AppFeatures = () => {
                                         No more wasted paper
                                     </h4>
                                     <p className="!mb-0 xl:!px-7">
-                                        Help the environment, save paper, and
-                                        don't lose anything
+                                        {`Help the environment, save paper, and
+                                        don't lose anything`}
                                     </p>
                                 </div>
                                 {/* /div */}
