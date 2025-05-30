@@ -1,9 +1,8 @@
 import ContactForm from '@/components/contact/ContactForm';
 
 export const metadata = {
-    title: 'Contact 03 || Sandbox - Modern & Multipurpose React Next.js Template with Tailwind CSS',
-    description:
-        'Sandbox - Modern & Multipurpose React Next.js Template with Tailwind CSS'
+    title: 'Contact Us',
+    description: 'DocketRockit Contact Us page'
 };
 
 const ContactPage = () => {
