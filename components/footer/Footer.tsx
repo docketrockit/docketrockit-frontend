@@ -12,13 +12,15 @@ export default function Footer26() {
                 <div className="flex flex-wrap mx-[-15px] !mt-[-30px] xl:!mt-0 lg:!mt-0">
                     <div className="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] !px-[15px] max-w-full xl:!mt-0 lg:!mt-0 !mt-[30px]">
                         <div className="widget">
-                            <Image
-                                className="!mb-4"
-                                alt="image"
-                                src="/assets/img/DR_Black_Transparent.png"
-                                width={134}
-                                height={26}
-                            />
+                            <Link href="/">
+                                <Image
+                                    className="!mb-4"
+                                    alt="image"
+                                    src="/assets/img/DR_Black_Transparent.png"
+                                    width={134}
+                                    height={26}
+                                />
+                            </Link>
                             <p className="!mb-4">
                                 © {new Date().getFullYear()} DocketRockit.{' '}
                                 <br className="hidden xl:block lg:block" />
