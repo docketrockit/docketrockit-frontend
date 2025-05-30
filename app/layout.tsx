@@ -1,6 +1,8 @@
 import type React from 'react';
 import { Suspense } from 'react';
 import type { Metadata } from 'next';
+import { GoogleAnalytics } from '@next/third-parties/google';
+import { GoogleTagManager } from '@next/third-parties/google';
 
 import '../public/assets/style.css';
 // import 'photoswipe/dist/photoswipe.css';
@@ -62,8 +64,7 @@ export default function RootLayout({
             lang="en"
             className={`${ibmPlexSerif.className} ${manrope.className}`}
         >
-            <head></head>
-
+            <GoogleTagManager gtmId="G-J2MJ4HD4ZW" />
             <body>
                 <Suspense fallback={null}>
                     <ClientInitialisers />
@@ -77,6 +78,7 @@ export default function RootLayout({
                     <ProgressWrap />
                 </Suspense>
             </body>
+            <GoogleAnalytics gaId="G-J2MJ4HD4ZW" />
         </html>
     );
 }
