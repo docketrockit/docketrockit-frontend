@@ -16,7 +16,7 @@ const ContactPage = () => {
                         backgroundImage: 'url(/assets/img/photos/bg23.png)'
                     }}
                 >
-                    <div className="container pt-32 xl:pt-40 lg:pt-40 md:pt-40 pb-[12.5rem] xl:pb-[12.5rem] lg:pb-[12.5rem] md:pb-[12.5rem] !text-center">
+                    <div className="container pt-[6.5rem]  pb-[3.5rem] xl:pb-[3.5rem] lg:pb-[3.5rem] md:pb-[3.5rem] !text-center">
                         <div className="flex flex-wrap mx-[-15px]">
                             <div className="sm:w-10/12 md:w-8/12 lg:w-6/12 xl:w-6/12 xxl:w-5/12 flex-[0_0_auto] !px-[15px] max-w-full !mx-auto">
                                 <h1 className="!text-[calc(1.365rem_+_1.38vw)] font-bold !leading-[1.2] xl:!text-[2.4rem] !mb-3">
@@ -34,8 +34,20 @@ const ContactPage = () => {
                     </div>
                     {/* /.container */}
                 </section>
-
                 <ContactForm />
+                <div className="wrapper !bg-[#ffffff]">
+                    <div className="map">
+                        <iframe
+                            // width="600"
+                            // height="450"
+                            style={{ width: '100%', height: 500, border: 0 }}
+                            loading="lazy"
+                            allowFullScreen
+                            src={`https://www.google.com/maps/embed/v1/view?key=${process.env.GOOGLE_PLACES_API_KEY}&zoom=12&center=-37.8136%2C144.9631`}
+                        ></iframe>
+                    </div>
+                    {/* /.map */}
+                </div>
             </div>
         </>
     );
