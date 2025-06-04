@@ -3,31 +3,6 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect } from 'react';
-import Image from 'next/image';
-import React from 'react';
-
-import {
-    blockItems,
-    blogItems,
-    demos,
-    docsPages,
-    otherPages,
-    projectPages
-} from '@/data/menu';
-
-// Define types for menu items
-interface MenuItem {
-    id: string | number;
-    href?: string;
-    label?: string;
-    title?: string;
-    links?: MenuItem[];
-    type?: string;
-    src?: string;
-    srcSet?: string;
-    alt?: string;
-    image?: string;
-}
 
 // Define interface for Bootstrap Dropdown
 interface BootstrapDropdown {
@@ -107,15 +82,12 @@ export default function Nav({ color = '#fab758' }: NavProps) {
     }, []);
 
     const pathname = usePathname();
+    let textColor = false;
 
-    const getActiveParent = (menuLinks: MenuItem[]): MenuItem | undefined => {
-        return menuLinks.find((parent) => {
-            if (parent.links) {
-                return parent.links.some((link) => link.href === pathname);
-            }
-            return parent.href === pathname;
-        });
-    };
+    if (pathname === '/retailers') {
+        color = '#000000';
+        textColor = true;
+    }
 
     return (
         <ul
@@ -126,7 +98,7 @@ export default function Nav({ color = '#fab758' }: NavProps) {
                 <Link
                     className={`nav-link dropdown-toggle !text-[.85rem] !tracking-[normal] hover:!text-[var(--current-color)] after:!text-[var(--current-color)] ${
                         pathname === '/' ? '!text-[var(--current-color)]' : ''
-                    } `}
+                    } ${textColor && '!text-white'} `}
                     href="/"
                 >
                     Home
@@ -138,7 +110,7 @@ export default function Nav({ color = '#fab758' }: NavProps) {
                         pathname === '/consumers'
                             ? '!text-[var(--current-color)]'
                             : ''
-                    } `}
+                    } ${textColor && '!text-white'}`}
                     href="/consumers"
                 >
                     For Consumers
@@ -162,7 +134,7 @@ export default function Nav({ color = '#fab758' }: NavProps) {
                         pathname === '/about'
                             ? '!text-[var(--current-color)]'
                             : ''
-                    } `}
+                    } ${textColor && '!text-white'} `}
                     href="/about"
                 >
                     About
@@ -174,7 +146,7 @@ export default function Nav({ color = '#fab758' }: NavProps) {
                         pathname === '/team'
                             ? '!text-[var(--current-color)]'
                             : ''
-                    } `}
+                    }  ${textColor && '!text-white'}`}
                     href="/team"
                 >
                     Team
@@ -186,7 +158,7 @@ export default function Nav({ color = '#fab758' }: NavProps) {
                         pathname === '/contact'
                             ? '!text-[var(--current-color)]'
                             : ''
-                    } `}
+                    }  ${textColor && '!text-white'}`}
                     href="/contact"
                 >
                     Contact
