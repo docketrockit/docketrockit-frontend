@@ -4,7 +4,7 @@ const ConsumersMainSection = () => {
     return (
         <section className="wrapper !bg-[#ffffff]">
             <div className="container pt-[4.5rem] xl:pt-28 lg:pt-28 md:pt-28 pb-[4.5rem] xl:pb-32 lg:pb-32 md:pb-32">
-                <div className="flex flex-wrap mx-[-15px] !text-center">
+                <div className="flex flex-wrap mx-[-15px] !text-center mb-10">
                     <div className="md:w-10/12 xl:w-8/12 lg:w-8/12 w-full flex-[0_0_auto] !px-[15px] max-w-full xl:!ml-[16.66666667%] lg:!ml-[16.66666667%] md:!ml-[8.33333333%]">
                         <h2 className="!text-[0.8rem] !tracking-[0.02rem] !leading-[1.35] uppercase text-gradient gradient-1 !mb-3">
                             Key Features & Benefits
@@ -223,9 +223,9 @@ const ConsumersMainSection = () => {
                                     Smarter Budgeting & Spending Insights
                                 </h3>
                                 <p className="!mb-0">
-                                    Track where your money’s going with a clear
-                                    breakdown of spending by category, store, or
-                                    time period.
+                                    Track where your money&apos;s going with a
+                                    clear breakdown of spending by category,
+                                    store, or time period.
                                 </p>
                             </div>
                         </div>
@@ -233,7 +233,7 @@ const ConsumersMainSection = () => {
                     {/*/column */}
                 </div>
                 {/*/.row */}
-                <div className="flex flex-wrap mx-[-7.5px] !mt-[-50px] !mb-[5rem] xl:!mb-[8rem] lg:!mb-[8rem] md:!mb-[8rem] items-center">
+                {/* <div className="flex flex-wrap mx-[-7.5px] !mt-[-50px] !mb-[5rem] xl:!mb-[8rem] lg:!mb-[8rem] md:!mb-[8rem] items-center">
                     <div className="xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] px-[7.5px] !mt-[50px] max-w-full xl:!ml-[8.33333333%] lg:!ml-[8.33333333%]">
                         <figure className="m-0 p-0">
                             <Image
@@ -245,7 +245,7 @@ const ConsumersMainSection = () => {
                             />
                         </figure>
                     </div>
-                    {/*/column */}
+
                     <div className="xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] px-[7.5px] !mt-[50px] max-w-full xl:!ml-[8.33333333%] lg:!ml-[8.33333333%]">
                         <h2 className="!text-[0.8rem] !tracking-[0.02rem] !leading-[1.35] uppercase text-gradient gradient-1 !mb-3">
                             Have Perfect Control
@@ -285,7 +285,7 @@ const ConsumersMainSection = () => {
                                     </li>
                                 </ul>
                             </div>
-                            {/*/column */}
+
                             <div className="xl:w-6/12 w-full flex-[0_0_auto] !mt-[15px] xl:!px-[20px] !px-[15px] max-w-full">
                                 <ul className="pl-0 list-none bullet-bg bullet-soft-primary !mb-0">
                                     <li className="relative !pl-6">
@@ -308,14 +308,11 @@ const ConsumersMainSection = () => {
                                     </li>
                                 </ul>
                             </div>
-                            {/*/column */}
                         </div>
-                        {/*/.row */}
                     </div>
-                    {/*/column */}
-                </div>
+                </div> */}
                 {/*/.row */}
-                <div className="flex flex-wrap mx-[-15px] xl:mx-[-20px] lg:mx-[-20px] md:mx-[-20px] !mt-[-50px] items-center">
+                {/* <div className="flex flex-wrap mx-[-15px] xl:mx-[-20px] lg:mx-[-20px] md:mx-[-20px] !mt-[-50px] items-center">
                     <div className="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:!px-[20px] lg:!px-[20px] md:!px-[20px] !px-[15px] max-w-full xl:!ml-[8.33333333%] lg:!ml-[8.33333333%] xl:!order-2 lg:!order-2 !relative !mt-[50px]">
                         <figure className="rounded-[0.4rem]">
                             <Image
@@ -377,24 +374,24 @@ const ConsumersMainSection = () => {
                                     </div>
                                 </div>
                             </div>
-                            {/*/.card-body */}
+            
                         </div>
-                        {/*/.card */}
+
                         <div
                             className="card !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)] !absolute !text-center xl:block lg:block md:block max-sm:!hidden"
                             style={{ bottom: '10%', left: '-10%' }}
                         >
                             <div className="card-body p-6">
                                 <div className="progressbar semi-circle fuchsia !relative !mb-3 !m-[0_auto_1rem] !w-[8.5rem] !h-[4.25rem]">
-                                    {/* <ProgressCircle max={80} /> */}
+                                    <ProgressCircle max={80} />
                                 </div>
                                 <h4 className="!mb-0">Time Saved</h4>
                             </div>
-                            {/*/.card-body */}
+                       
                         </div>
-                        {/*/.card */}
+                  
                     </div>
-                    {/*/column */}
+               
                     <div className="xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] xl:!px-[20px] lg:!px-[20px] md:!px-[20px] !px-[15px] max-w-full !mt-[50px]">
                         <h2 className="!text-[0.8rem] !tracking-[0.02rem] !leading-[1.35] uppercase text-gradient gradient-1 !mb-3">
                             What Makes Us Different?
@@ -417,11 +414,9 @@ const ConsumersMainSection = () => {
                             </li>
                         </ul>
                     </div>
-                    {/*/column */}
-                </div>
-                {/*/.row */}
+                 
+                </div> */}
             </div>
-            {/* /.container */}
         </section>
     );
 };
