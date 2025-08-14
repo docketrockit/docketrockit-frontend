@@ -39,15 +39,17 @@ const HomePage = () => {
         url: '/',
         datePublished: '2025-08-14T10:00:00Z',
         dateModified: '2025-08-14T12:00:00Z',
-        authorName: 'John Doe',
+        authorName: 'Mark Rosenberg',
         image: '/assets/img/DocketRockitLogoHorizontal.png'
     };
 
     const structuredData = generateStructuredData(metadata);
+    const canonicalUrl = `${process.env.NEXT_PUBLIC_APP_URL}`;
 
     return (
         <>
             <Head>
+                <link rel="canonical" href={canonicalUrl} />
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{

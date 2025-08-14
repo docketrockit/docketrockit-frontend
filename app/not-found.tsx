@@ -2,9 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Page Not Found || Sandbox - Modern & Multipurpose React Next.js Template with Tailwind CSS',
-    description:
-        'Sandbox - Modern & Multipurpose React Next.js Template with Tailwind CSS'
+    title: 'DocketRockit | Page Not Found',
+    description: 'DocketRockit'
 };
 export default function NotFoundPage() {
     return (
