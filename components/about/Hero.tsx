@@ -1,4 +1,5 @@
 import Image from 'next/image';
+
 export default function Hero() {
     return (
         <section className="wrapper !bg-[#f0f0f8] pt-18">

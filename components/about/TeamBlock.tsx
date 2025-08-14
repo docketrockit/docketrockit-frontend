@@ -59,7 +59,7 @@ const TeamBlock = () => {
                     data-rellax-speed={1}
                     style={{ top: '0.5rem', left: '-1.7rem' }}
                 />
-                <div className="grid grid-cols-3 !mb-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 !mb-6">
                     {slidesData.map((slide) => (
                         <div className="item-inner h-full" key={slide.id}>
                             <div className="card">

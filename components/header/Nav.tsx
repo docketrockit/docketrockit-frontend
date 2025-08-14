@@ -82,12 +82,12 @@ export default function Nav({ color = '#fab758' }: NavProps) {
     }, []);
 
     const pathname = usePathname();
-    let textColor = false;
+    const textColor = false;
 
-    if (pathname === '/retailers') {
-        color = '#000000';
-        textColor = true;
-    }
+    // if (pathname === '/retailers') {
+    //     // color = '#494949';
+    //     textColor = true;
+    // }
 
     return (
         <ul
@@ -98,7 +98,7 @@ export default function Nav({ color = '#fab758' }: NavProps) {
                 <Link
                     className={`nav-link dropdown-toggle !text-[.85rem] !tracking-[normal] hover:!text-[var(--current-color)] after:!text-[var(--current-color)] ${
                         pathname === '/' ? '!text-[var(--current-color)]' : ''
-                    } ${textColor && '!text-white'} `}
+                    } ${textColor && '!text-black'} `}
                     href="/"
                 >
                     Home
@@ -110,7 +110,7 @@ export default function Nav({ color = '#fab758' }: NavProps) {
                         pathname === '/consumers'
                             ? '!text-[var(--current-color)]'
                             : ''
-                    } ${textColor && '!text-white'}`}
+                    } ${textColor && '!text-black'}`}
                     href="/consumers"
                 >
                     For Consumers
@@ -134,31 +134,31 @@ export default function Nav({ color = '#fab758' }: NavProps) {
                         pathname === '/about'
                             ? '!text-[var(--current-color)]'
                             : ''
-                    } ${textColor && '!text-white'} `}
+                    } ${textColor && '!text-black'} `}
                     href="/about"
                 >
                     About
                 </Link>
             </li>
-            <li className="nav-item dropdown dropdown-mega">
+            {/* <li className="nav-item dropdown dropdown-mega">
                 <Link
                     className={`nav-link dropdown-toggle !text-[.85rem] !tracking-[normal] hover:!text-[var(--current-color)] after:!text-[var(--current-color)]   ${
                         pathname === '/team'
                             ? '!text-[var(--current-color)]'
                             : ''
-                    }  ${textColor && '!text-white'}`}
+                    }  ${textColor && '!text-black'}`}
                     href="/team"
                 >
                     Team
                 </Link>
-            </li>
+            </li> */}
             <li className="nav-item dropdown dropdown-mega">
                 <Link
                     className={`nav-link dropdown-toggle !text-[.85rem] !tracking-[normal] hover:!text-[var(--current-color)] after:!text-[var(--current-color)]   ${
                         pathname === '/contact'
                             ? '!text-[var(--current-color)]'
                             : ''
-                    }  ${textColor && '!text-white'}`}
+                    }  ${textColor && '!text-black'}`}
                     href="/contact"
                 >
                     Contact

@@ -1,40 +1,26 @@
 import type { Metadata } from 'next';
 
-import Link from 'next/link';
+import Hero from '@/components/about/Hero';
+import TeamBlock from '@/components/about/TeamBlock';
+import AboutBlock from '@/components/about/AboutBlock';
 
 export const metadata: Metadata = {
-    title: 'Coming soon!',
-    description: 'Coming'
-};
-const AboutPage = () => {
-    return (
-        <>
-            <div className="grow shrink-0">
-                <section className="wrapper !bg-[#ffffff]">
-                    <div className="container pt-14 xl:pt-[4.5rem] lg:pt-[4.5rem] md:pt-[4.5rem] pb-[4.5rem] xl:pb-24 lg:pb-24 md:pb-24">
-                        <div className="flex flex-wrap mx-[-15px]">
-                            <div className="lg:w-9/12 xl:w-8/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mx-auto"></div>
-                            {/* /column */}
-                            <div className="lg:w-8/12 xl:w-7/12 xxl:w-6/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mx-auto !text-center">
-                                <h1 className="!mb-3 pt-52">
-                                    Page Coming Soon!
-                                </h1>
-                                <Link
-                                    href={`/`}
-                                    className="btn btn-primary !text-white !bg-[#3f78e0] border-[#3f78e0] hover:text-white hover:bg-[#3f78e0] hover:!border-[#3f78e0] active:text-white active:bg-[#3f78e0] active:border-[#3f78e0] disabled:text-white disabled:bg-[#3f78e0] disabled:border-[#3f78e0] !rounded-[50rem] hover:translate-y-[-0.15rem] hover:shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.15)]"
-                                >
-                                    Go to Homepage
-                                </Link>
-                            </div>
-                            {/* /column */}
-                        </div>
-                        {/* /.row */}
-                    </div>
-                    {/* /.container */}
-                </section>
-            </div>
-        </>
-    );
+    title: 'About',
+    description: 'Learn about us and our team'
 };
 
-export default AboutPage;
+const page = () => {
+    return (
+        <div>
+            <Hero />
+            <section className="wrapper !bg-[#ffffff] angled upper-end lower-end relative border-0 before:top-[-4rem] before:border-l-transparent before:border-r-[100vw] before:border-t-[4rem] before:border-[#fefefe] before:content-[''] before:block before:absolute before:z-0 before:!border-y-transparent before:border-0 before:border-solid before:right-0 after:bottom-[-4rem] after:border-l-transparent after:border-r-[100vw] after:border-b-[4rem] after:border-[#fefefe] after:content-[''] after:block after:absolute after:z-0 after:!border-y-transparent after:border-0 after:border-solid after:right-0">
+                <div className="container py-[2.5rem] xl:!py-24 lg:!py-24 md:!py-24">
+                    <AboutBlock />
+                </div>
+                {/* /.container */}
+            </section>
+            <TeamBlock />
+        </div>
+    );
+};
+export default page;
