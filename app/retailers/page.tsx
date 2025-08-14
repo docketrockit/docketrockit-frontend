@@ -1,10 +1,12 @@
+import type { Metadata } from 'next';
+
 import RetailersAbout from '@/components/retailers/RetailersAbout';
 import RetailerBenefits from '@/components/retailers/RetailersBenefits';
 import RetailersCallOut from '@/components/retailers/RetailersCallOut';
 import RetailersCTA from '@/components/retailers/RetailersCTA';
 import RetailersHero from '@/components/retailers/RetailersHero';
 
-export const metadata = {
+export const metadata: Metadata = {
     title: 'Retailers',
     description: 'More about what we do for retailers'
 };

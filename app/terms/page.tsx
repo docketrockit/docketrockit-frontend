@@ -1,6 +1,8 @@
+import type { Metadata } from 'next';
+
 import Terms from '@/components/terms/Terms';
 
-export const metadata = {
+export const metadata: Metadata = {
     title: 'Terms and Conditions',
     description: 'DocketRockit Terms and Conditions'
 };

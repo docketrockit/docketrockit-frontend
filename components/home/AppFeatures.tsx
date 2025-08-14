@@ -6,8 +6,7 @@ import {
     Landmark,
     PackageOpen,
     Search,
-    Smartphone,
-    Vault
+    Smartphone
 } from 'lucide-react';
 import Image from 'next/image';
 

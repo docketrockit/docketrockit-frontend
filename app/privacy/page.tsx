@@ -1,6 +1,8 @@
+import type { Metadata } from 'next';
+
 import PrivacyPolicies from '@/components/privacy/Privacy';
 
-export const metadata = {
+export const metadata: Metadata = {
     title: 'Privacy Policy',
     description: 'DocketRockit Privacy Policy'
 };

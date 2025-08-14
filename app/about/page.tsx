@@ -1,6 +1,8 @@
+import type { Metadata } from 'next';
+
 import Link from 'next/link';
 
-export const metadata = {
+export const metadata: Metadata = {
     title: 'Coming soon!',
     description: 'Coming'
 };

@@ -1,6 +1,8 @@
+import type { Metadata } from 'next';
+
 import ContactForm from '@/components/contact/ContactForm';
 
-export const metadata = {
+export const metadata: Metadata = {
     title: 'Contact Us',
     description: 'DocketRockit Contact Us page'
 };

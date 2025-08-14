@@ -7,7 +7,7 @@ export const ContactSchema = z.object({
     lastName: z.string().min(1, {
         message: 'First Name is required'
     }),
-    email: z.string().email({ message: 'Invalid email address' }),
+    email: z.email({ message: 'Invalid email address' }),
     subject: z.string().min(1, {
         message: 'Subject is required'
     }),

@@ -1,7 +1,9 @@
+import type { Metadata } from 'next';
+
 import ConsumersHero from '@/components/consumers/ConsumersHero';
 import ConsumersMainSection from '@/components/consumers/ConsumersMainSection';
 
-export const metadata = {
+export const metadata: Metadata = {
     title: 'Consumers',
     description: 'See what we do for consumers'
 };
