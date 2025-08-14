@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Head from 'next/head';
 
 import siteMetadata from '@/utils/siteMetaData';
 import Hero from '@/components/home/Hero';
@@ -6,9 +7,7 @@ import AppFeatures from '@/components/home/AppFeatures';
 import Faqs from '@/components/home/Faqs';
 import Features from '@/components/home/Features';
 import Cta from '@/components/home/Cta';
-
-// import Footer26 from '@/components/footers/Footer26';
-// import Header27 from '@/components/headers/Header27';
+import { PageMetadata, generateStructuredData } from '@/lib/structureData';
 
 export function generateMetadata(): Metadata {
     return {
@@ -34,8 +33,28 @@ export function generateMetadata(): Metadata {
 }
 
 const HomePage = () => {
+    const metadata: PageMetadata = {
+        title: 'DocketRockit',
+        description: 'Learn what DocketRockit is all about!',
+        url: '/',
+        datePublished: '2025-08-14T10:00:00Z',
+        dateModified: '2025-08-14T12:00:00Z',
+        authorName: 'John Doe',
+        image: '/assets/img/DocketRockitLogoHorizontal.png'
+    };
+
+    const structuredData = generateStructuredData(metadata);
+
     return (
         <>
+            <Head>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(structuredData)
+                    }}
+                />
+            </Head>
             <Hero />
             <AppFeatures />
             <Faqs />
