@@ -13,5 +13,6 @@ export const ContactSchema = z.object({
     }),
     message: z.string().min(1, {
         message: 'Message is required'
-    })
+    }),
+    website: z.string().optional()
 });

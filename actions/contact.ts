@@ -7,6 +7,9 @@ import { sendContactEmail } from '@/lib/mail';
 
 export const createContact = async (values: z.infer<typeof ContactSchema>) => {
     try {
+        if (values.website) {
+            return { error: null };
+        }
         const validatedFields = ContactSchema.safeParse(values);
 
         if (!validatedFields.success) {

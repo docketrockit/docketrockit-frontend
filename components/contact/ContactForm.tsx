@@ -229,6 +229,33 @@ const ContactForm = () => {
                                                             />
                                                         </div>
                                                     </div>
+                                                    <div
+                                                        className="absolute opacity-0 pointer-events-none"
+                                                        aria-hidden="true"
+                                                        tabIndex={-1}
+                                                    >
+                                                        <FormField
+                                                            control={
+                                                                form.control
+                                                            }
+                                                            name="website"
+                                                            render={({
+                                                                field
+                                                            }) => (
+                                                                <FormItem>
+                                                                    <FormControl>
+                                                                        <Input
+                                                                            {...field}
+                                                                            autoComplete="off"
+                                                                            tabIndex={
+                                                                                -1
+                                                                            }
+                                                                        />
+                                                                    </FormControl>
+                                                                </FormItem>
+                                                            )}
+                                                        />
+                                                    </div>
                                                     {/* /column */}
 
                                                     <div className="w-full flex-[0_0_auto] !px-[15px] max-w-full">
